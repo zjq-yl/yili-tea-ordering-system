@@ -124,7 +124,7 @@ app/src/main/
 
 1. **克隆项目**
 ```bash
-git clone https://github.com/你的用户名/你的仓库名.git
+git clone https://github.com/zjq-yl/yili-tea-ordering-system.git
 ```
 
 2. **用 Android Studio 打开**
@@ -263,32 +263,7 @@ git clone https://github.com/你的用户名/你的仓库名.git
 
 ## 📄 开源协议
 
-本项目采用 MIT 协议开源。
-
-```
-MIT License
-
-Copyright (c) 2025 艺黎奶茶铺
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
+本项目采用 MIT 协议开源，详见 [LICENSE](LICENSE) 文件。
 ---
 
 ## 👨‍💻 作者
@@ -297,8 +272,8 @@ SOFTWARE.
 |------|------|
 | 项目名称 | 基于Android的奶茶饮品点单系统设计与实现 |
 | 开发团队 | 艺黎 |
-| GitHub | [你的GitHub主页](https://github.com/zjq-yl) |
-| 项目地址 | [GitHub仓库链接](https://github.com/zjq-yl/yili-tea-ordering-system) |
+| GitHub | (https://github.com/zjq-yl) |
+| 项目地址 | (https://github.com/zjq-yl/yili-tea-ordering-system) |
 
 ---
 
