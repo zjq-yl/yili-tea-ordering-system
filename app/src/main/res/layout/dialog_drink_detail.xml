@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card_white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_drink_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="芋泥波波奶茶"
+        android:textSize="20sp"
+        android:textColor="@color/purple_dark"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_drink_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¥18"
+        android:textSize="16sp"
+        android:textColor="@color/purple_medium"
+        android:layout_marginBottom="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/purple_light"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 甜度选择 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="甜度"
+        android:textSize="14sp"
+        android:textColor="@color/purple_dark"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/sugar_normal"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="正常"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_takeout_selected"
+            android:textColor="@color/purple_medium" />
+
+        <TextView
+            android:id="@+id/sugar_less"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="少糖"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_takeout_selected"
+            android:textColor="@color/purple_medium" />
+
+        <TextView
+            android:id="@+id/sugar_half"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="半糖"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="@drawable/bg_takeout_selected"
+            android:textColor="@color/purple_medium" />
+
+    </LinearLayout>
+
+    <!-- 冰量选择 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="冰量"
+        android:textSize="14sp"
+        android:textColor="@color/purple_dark"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_ice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/ice_normal"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="正常冰"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_takeout_selected"
+            android:textColor="@color/purple_medium" />
+
+        <TextView
+            android:id="@+id/ice_less"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="少冰"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_takeout_selected"
+            android:textColor="@color/purple_medium" />
+
+        <TextView
+            android:id="@+id/ice_no"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="去冰"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="@drawable/bg_takeout_selected"
+            android:textColor="@color/purple_medium" />
+
+    </LinearLayout>
+
+    <!-- 加料 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加料"
+        android:textSize="14sp"
+        android:textColor="@color/purple_dark"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_toppings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/toppings_none"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="不加"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_takeout_normal"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/toppings_pearl"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="珍珠"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_takeout_selected"
+            android:textColor="@color/purple_medium" />
+
+        <TextView
+            android:id="@+id/toppings_coconut"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:text="椰果"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:background="@drawable/bg_takeout_selected"
+            android:textColor="@color/purple_medium" />
+
+    </LinearLayout>
+
+    <!-- 数量 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:textSize="14sp"
+            android:textColor="@color/purple_dark" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_minus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="-"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:background="@drawable/bg_takeout_selected"
+                android:textColor="@color/purple_medium" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="40dp"
+                android:layout_height="32dp"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/purple_dark" />
+
+            <TextView
+                android:id="@+id/btn_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:background="@drawable/bg_takeout_selected"
+                android:textColor="@color/purple_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 加入购物车按钮 -->
+    <Button
+        android:id="@+id/btn_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="加入购物车"
+        android:backgroundTint="@color/purple_dark"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/bg_main">
+
+    <!-- 左侧分类栏 -->
+    <LinearLayout
+        android:id="@+id/category_container"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/category_milk_tea"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="奶茶"
+            android:textSize="16sp"
+            android:textColor="@color/purple_dark"
+            android:background="@drawable/bg_category_selected" />
+
+        <TextView
+            android:id="@+id/category_fruit_tea"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="果茶"
+            android:textSize="16sp"
+            android:textColor="@color/gray_light"
+            android:background="@drawable/bg_category_normal" />
+
+        <TextView
+            android:id="@+id/category_topping"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="小料"
+            android:textSize="16sp"
+            android:textColor="@color/gray_light"
+            android:background="@drawable/bg_category_normal" />
+
+        <TextView
+            android:id="@+id/category_icecream"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="冰淇淋"
+            android:textSize="16sp"
+            android:textColor="@color/gray_light"
+            android:background="@drawable/bg_category_normal" />
+
+        <TextView
+            android:id="@+id/category_pure_tea"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="纯茶"
+            android:textSize="16sp"
+            android:textColor="@color/gray_light"
+            android:background="@drawable/bg_category_normal" />
+
+    </LinearLayout>
+
+    <!-- 右侧内容区域（包含列表和底部购物车） -->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!-- 列表内容 -->
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cart_bar"
+            android:padding="8dp" />
+
+        <!-- 底部购物车栏 -->
+        <LinearLayout
+            android:id="@+id/cart_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:visibility="gone">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cart_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_cart"
+                app:civ_border_width="0dp" />
+
+            <TextView
+                android:id="@+id/cart_count"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:background="@drawable/tag_hot"
+                android:layout_marginStart="-12dp"
+                android:layout_marginTop="-12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:text="购物车"
+                android:textSize="14sp"
+                android:textColor="@color/purple_dark" />
+
+            <TextView
+                android:id="@+id/cart_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥0"
+                android:textSize="16sp"
+                android:textColor="@color/purple_dark"
+                android:textStyle="bold"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/btn_checkout"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="结算"
+                android:backgroundTint="@color/purple_dark"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

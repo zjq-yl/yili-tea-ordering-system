@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>奶茶</item>
+        <item>果茶</item>
+        <item>纯茶</item>
+        <item>冰淇淋</item>
+        <item>小料</item>
+    </string-array>
+
+    <string-array name="tags">
+        <item>无标签</item>
+        <item>人气爆款</item>
+        <item>新品</item>
+    </string-array>
+</resources>

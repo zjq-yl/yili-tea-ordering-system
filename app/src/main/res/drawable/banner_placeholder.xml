@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="160dp"
+    android:viewportWidth="360"
+    android:viewportHeight="160">
+    <path
+        android:fillColor="@color/purple_medium"
+        android:pathData="M0,0h360v160h-360z"/>
+    <path
+        android:fillColor="@color/purple_dark"
+        android:pathData="M20,20h100v60h-100zM240,20h100v60h-100zM20,100h100v40h-100zM240,100h100v40h-100z"/>
+</vector>
+
+<!-- Banner占位图 -->
